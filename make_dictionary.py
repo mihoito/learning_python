@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import sys
 def modify_line(string):
-    removing_character_string = "‘’()<>[]{}&/?=-_:;,."
+    removing_character_string = "'‘’()<>[]{}&/?=-_:;,.!"
     modefied_str =string.lower()
     modefied_str = modefied_str.replace('"',' ')
     modefied_str = modefied_str.replace('\n','').replace('\t',' ')
@@ -16,8 +16,8 @@ def make_word_frequency_dictionary(word_list):
     for word in word_list:
         if word in word_frequency_dict:
             word_frequency_dict[word] += 1
-    else:
-        word_frequency_dict[word] = 1
+        else:
+            word_frequency_dict[word] = 1
     return(word_frequency_dict)
 
 
