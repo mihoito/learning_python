@@ -26,7 +26,7 @@ def make_word_frequency_dictionary(word_list):
 import math
 
 
-fh = open(sys.argv[1], ’r’)
+fh = open(sys.argv[1], 'r')
 word_list = []
 line = fh.readline()
 while line:
